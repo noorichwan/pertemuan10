@@ -31,6 +31,8 @@ public class mainclass {
         pickhero.kenaDamage(780);
         pickhero.skill("Skill 1",300);
         pickhero.healing(100);
+        hero uranus = new hero(7000, 4000);
+        hero pharsa = new hero("Estes","Healing","Support");
         //Ini Saya nonaktifkan karena sama saja dengan yang diatas
         //Bedanya ini hanya lanjutan sama beda angka
         //pickhero.kenaDamage(450);

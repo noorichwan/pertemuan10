@@ -29,7 +29,6 @@ public class item extends hero{ //subclass dari class1(hero). extends disini ber
     }
     
     
-    
     //getter dari class2
     public String getFungsiItem() {
         return fungsiItem;
@@ -43,24 +42,25 @@ public class item extends hero{ //subclass dari class1(hero). extends disini ber
         return nameItem;
     }
     
-    public void ketItem(){//Method ini sama berfungsi seperti method ket
+    public void ketItem(){//Method ini sama berfungsi seperti method ketHero
         System.out.println("Pemilihan Item:");
         System.out.println("Nama Item  : \t "+nameItem);
         System.out.println("funsiItem  : \t "+fungsiItem);
         System.out.println("Pasif Item : \t "+pasifItem);
     }
     
-    public void aktifPasifItem(){//
+    public void aktifPasifItem(){//Method ini berfungsi menambakan jumlah mana dari class 1
         jumlahMana=jumlahMana + 400;
         System.out.println("Total Mana Sekarang Adalah "+jumlahMana);
     }
-    
-    /*public float DamageItem(){
-        //Ini Overriding, tapi saya error jadi saya nonaktifkan
-        //Saya Meminta maaf karena masih belum bisa melakukan overriding
-        //Masih belum bisa, bukan tidak bisa.
-        //Semoga jika diberikan waktu lebih lagi saya bisa mempelajari lebih lanjut
-        return (float) (getDamage()*2.4);
-    }*/
 
+    @Override 
+    public void setJumlahMana(int jumlahMana) {
+        super.setJumlahMana(jumlahMana); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void kenaDamage(int jumlahDamage) {
+        super.kenaDamage(jumlahDamage); //To change body of generated methods, choose Tools | Templates.
+    }
 }
